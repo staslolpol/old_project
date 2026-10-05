@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа итальянского</title>
+    <link rel="stylesheet" href="odo.css">
+    <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div style="height:190px"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#schedule">Расписание уроков</a></li>
+                    <li><a href="#contact">Записаться на курсы</a></li>
+                </ul>
+                <span>+37529 1111111</span>
+            </div>
+        </div>
+        <div class="content">
+            <div style="height:270px"></div>
+            <div class="about">
+                <h2 id="about">О нас</h2>
+                <img src="img1.png">
+                <p>Приветствуем тебя дорогой друг!</p>
+                <p>Добро пожаловать в нашу школу итальянского языка.
+                 Занятия проводятся в игровой форме под руководством прекрасных
+                 преподавателей - носителей языка. В стоимость курса входят также
+                 языковые туристические туры в знаменитые города Италии.</p>
+                <p>Обучаясь у нас, ты не только научишься свободно владеть итальянским
+                 языком, но и получишь массу приятных воспоминаний и новых
+                 друзей.</p>
+            </div>
+            <div style="height:270px"></div>
+            <div class="schedule">
+                <h2 id="schedule">Расписание уроков</h2>
+                <img src="img1.png">
+                <p>1-я группа: с понедельника по пятницу 18.00-21.00</p>
+                <p>2-я группа: по субботам и воскресеньям 15.00-21.00</p>
+                <p>3-я группа: по субботам и воскресеньям 9.00-15.00</p>
+                <p>Срок обучения 1-я и 2-я ступень 4 недели</p>
+            </div>
+            <div style="height:270px"></div>
+            <div class="contact">
+                <h2 id="contact">Записаться на курсы</h2>
+                <img src="img1.png">
+                <p>Записаться на курсы вы сможете по телефону: +375 29 123 45 67, менеджер Анна</p>
+                <p>Или по адресу:</p>
+                <p>г. Минск, ул. Солнечная, дом 25 аудитория 0</p>
+                <p>Также вы можете оставить заявку по электронной почте 000@gmail.com</p>
+            </div>
+            <div style="height:20px"></div>
+        </div>
+    </div>
+    <script>
+        $('a[href^="#"]').click(function () {
+        var target = $(this).attr('href');
+        $('html,body').animate({scrollTop: $(target).offset() top - 290}, 800);
+        return false;
+        })
+    </script>   
+</body>
+</html>
