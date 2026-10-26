@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC — Меню</title>
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Логотип слева сверху -->
+    <a href="#" class="corner-logo" aria-label="KFC — на главную">
+        <img src="LOGOf.png" alt="Логотип KFC">
+    </a>
+
+    <!-- Боковая панель навигации -->
+    <nav class="sidebar" aria-label="Категории меню">
+        <a href="#burger" class="side-link" title="Бургеры">
+            <img src="burger.png" alt="Иконка бургеров">
+            <span>Бургеры</span>
+        </a>
+        <a href="#chicken" class="side-link" title="Цыплёнок">
+            <img src="chicken.png" alt="Иконка цыплёнка">
+            <span>Цыплёнок</span>
+        </a>
+        <a href="#potato" class="side-link" title="Гарниры">
+            <img src="potato0.png" alt="Иконка картофеля">
+            <span>Гарниры</span>
+        </a>
+        <a href="#drinks" class="side-link" title="Напитки">
+            <img src="coke.png" alt="Иконка напитков">
+            <span>Напитки</span>
+        </a>
+    </nav>
+
+    <main class="content">
+
+        <!-- Шапка -->
+        <header class="hero">
+            <div class="hero-inner">
+                <img class="hero-logo" src="KFC(logo2).png" alt="KFC">
+                <h1>Наше меню</h1>
+                <p class="hero-sub">Сочное, хрустящее и всегда свежее — выбирай своё блюдо</p>
+            </div>
+            <img class="hero-photo" src="header.jpg" alt="" aria-hidden="true">
+        </header>
+
+        <!-- Бургеры -->
+        <section id="burger" class="menu-section">
+            <h2 class="section-title"><span class="dot"></span>Бургеры</h2>
+            <ul class="grid">
+                <li class="card">
+                    <div class="card-img"><img src="BURGER1.png" alt="Чиз Сандерс бургер" loading="lazy"></div>
+                    <h3 class="card-name">Чиз Сандерс бургер</h3>
+                    <div class="card-bottom">
+                        <span class="price">14,90 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="BURGER2.png" alt="Биг Сандерс бургер оригинальный" loading="lazy"></div>
+                    <h3 class="card-name">Биг Сандерс бургер оригинальный</h3>
+                    <div class="card-bottom">
+                        <span class="price">12,90 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="BURGER3.png" alt="Биг Сандерс бургер острый" loading="lazy"></div>
+                    <h3 class="card-name">Биг Сандерс бургер острый</h3>
+                    <div class="card-bottom">
+                        <span class="price">12,90 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="BURGER4.png" alt="Сандерс бургер острый" loading="lazy"></div>
+                    <h3 class="card-name">Сандерс бургер острый</h3>
+                    <div class="card-bottom">
+                        <span class="price">9,90 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="BURGER5.png" alt="Шефбургер джуниор острый" loading="lazy"></div>
+                    <h3 class="card-name">Шефбургер джуниор острый</h3>
+                    <div class="card-bottom">
+                        <span class="price">5,50 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="BURGER6.png" alt="Чизбургер де люкс" loading="lazy"></div>
+                    <h3 class="card-name">Чизбургер де люкс</h3>
+                    <div class="card-bottom">
+                        <span class="price">6,50 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="BURGER7.png" alt="Чизбургер" loading="lazy"></div>
+                    <h3 class="card-name">Чизбургер</h3>
+                    <div class="card-bottom">
+                        <span class="price">4,90 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="BURGER8.png" alt="Чизбургер джуниор" loading="lazy"></div>
+                    <h3 class="card-name">Чизбургер джуниор</h3>
+                    <div class="card-bottom">
+                        <span class="price">3,90 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Цыплёнок -->
+        <section id="chicken" class="menu-section">
+            <h2 class="section-title"><span class="dot"></span>Цыплёнок</h2>
+            <ul class="grid">
+                <li class="card">
+                    <div class="card-img"><img src="CHIKEN1.png" alt="Байтсы Терияки" loading="lazy"></div>
+                    <h3 class="card-name">Байтсы Терияки</h3>
+                    <div class="card-bottom">
+                        <span class="price">6,40 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="CHIKEN2.png" alt="8 острых крыльев" loading="lazy"></div>
+                    <h3 class="card-name">8 острых крыльев</h3>
+                    <div class="card-bottom">
+                        <span class="price">12,90 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="CHIKEN3.png" alt="8 острых крыльев с соусом" loading="lazy"></div>
+                    <h3 class="card-name">8 острых крыльев с соусом</h3>
+                    <div class="card-bottom">
+                        <span class="price">14,00 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="CHIKEN4.png" alt="8 стрипсов оригинальные" loading="lazy"></div>
+                    <h3 class="card-name">8 стрипсов оригинальные</h3>
+                    <div class="card-bottom">
+                        <span class="price">11,90 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="CHIKEN5.png" alt="8 стрипсов оригинальные с соусами" loading="lazy"></div>
+                    <h3 class="card-name">8 стрипсов оригинальные с соусами</h3>
+                    <div class="card-bottom">
+                        <span class="price">14,10 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="CHIKEN4.png" alt="8 стрипсов острые" loading="lazy"></div>
+                    <h3 class="card-name">8 стрипсов острые</h3>
+                    <div class="card-bottom">
+                        <span class="price">11,90 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="CHIKEN5.png" alt="8 стрипсов острые с соусами" loading="lazy"></div>
+                    <h3 class="card-name">8 стрипсов острые с соусами</h3>
+                    <div class="card-bottom">
+                        <span class="price">14,10 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="CHIKEN6.png" alt="4 ножки оригинальные" loading="lazy"></div>
+                    <h3 class="card-name">4 ножки оригинальные</h3>
+                    <div class="card-bottom">
+                        <span class="price">10,10 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="CHIKEN7.png" alt="4 ножки оригинальные с соусом" loading="lazy"></div>
+                    <h3 class="card-name">4 ножки оригинальные с соусом</h3>
+                    <div class="card-bottom">
+                        <span class="price">11,20 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="CHIKEN8.png" alt="Байтсы большие" loading="lazy"></div>
+                    <h3 class="card-name">Байтсы большие</h3>
+                    <div class="card-bottom">
+                        <span class="price">10,40 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="CHIKEN9.png" alt="Байтсы большие с соусами" loading="lazy"></div>
+                    <h3 class="card-name">Байтсы большие с соусами</h3>
+                    <div class="card-bottom">
+                        <span class="price">12,60 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="CHIKEN10.png" alt="18 наггетсов" loading="lazy"></div>
+                    <h3 class="card-name">18 наггетсов</h3>
+                    <div class="card-bottom">
+                        <span class="price">15,00 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="CHIKEN11.png" alt="18 наггетсов с соусами" loading="lazy"></div>
+                    <h3 class="card-name">18 наггетсов с соусами</h3>
+                    <div class="card-bottom">
+                        <span class="price">16,10 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Гарниры -->
+        <section id="potato" class="menu-section">
+            <h2 class="section-title"><span class="dot"></span>Гарниры</h2>
+            <ul class="grid">
+                <li class="card">
+                    <div class="card-img"><img src="POTATO1.png" alt="Сандерс картофель фри" loading="lazy"></div>
+                    <h3 class="card-name">Сандерс картофель фри</h3>
+                    <div class="card-bottom">
+                        <span class="price">5,50 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="POTATO2.png" alt="Сандерс картофель по-деревенски" loading="lazy"></div>
+                    <h3 class="card-name">Сандерс картофель по-деревенски</h3>
+                    <div class="card-bottom">
+                        <span class="price">5,50 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="POTATO3.png" alt="Баскет картофель фри с соусами" loading="lazy"></div>
+                    <h3 class="card-name">Баскет картофель фри с соусами</h3>
+                    <div class="card-bottom">
+                        <span class="price">8,60 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="POTATO4.png" alt="Картофель фри стандартный и соус" loading="lazy"></div>
+                    <h3 class="card-name">Картофель фри стандартный и соус</h3>
+                    <div class="card-bottom">
+                        <span class="price">5,10 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="POTATO5.png" alt="Картофель фри малый и соус" loading="lazy"></div>
+                    <h3 class="card-name">Картофель фри малый и соус</h3>
+                    <div class="card-bottom">
+                        <span class="price">3,90 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="POTATO6.png" alt="Картофель по-деревенски стандартный с соусом" loading="lazy"></div>
+                    <h3 class="card-name">Картофель по-деревенски стандартный с соусом</h3>
+                    <div class="card-bottom">
+                        <span class="price">5,30 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="POTATO7.png" alt="Картофель по-деревенски малый с соусом" loading="lazy"></div>
+                    <h3 class="card-name">Картофель по-деревенски малый с соусом</h3>
+                    <div class="card-bottom">
+                        <span class="price">4,40 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="POTATO8.png" alt="Луковые кольца 9 шт" loading="lazy"></div>
+                    <h3 class="card-name">Луковые кольца, 9 шт</h3>
+                    <div class="card-bottom">
+                        <span class="price">6,40 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="POTATO9.png" alt="Луковые кольца 9 шт с соусом" loading="lazy"></div>
+                    <h3 class="card-name">Луковые кольца, 9 шт + соус</h3>
+                    <div class="card-bottom">
+                        <span class="price">7,50 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Напитки -->
+        <section id="drinks" class="menu-section">
+            <h2 class="section-title"><span class="dot"></span>Напитки</h2>
+            <ul class="grid">
+                <li class="card">
+                    <div class="card-img"><img src="COKE1.png" alt="Лимонад Мохито 0,3 л" loading="lazy"></div>
+                    <h3 class="card-name">Лимонад «Мохито» (0,3 л)</h3>
+                    <div class="card-bottom">
+                        <span class="price">4,20 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="COKE2.png" alt="Кока-Кола без сахара S 0,4 л" loading="lazy"></div>
+                    <h3 class="card-name">Кока-Кола без сахара S (0,4 л)</h3>
+                    <div class="card-bottom">
+                        <span class="price">3,60 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="COKE2.png" alt="Кока-Кола S 0,4 л" loading="lazy"></div>
+                    <h3 class="card-name">Кока-Кола S (0,4 л)</h3>
+                    <div class="card-bottom">
+                        <span class="price">3,60 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="COKE3.png" alt="Фанта S 0,4 л" loading="lazy"></div>
+                    <h3 class="card-name">Фанта S (0,4 л)</h3>
+                    <div class="card-bottom">
+                        <span class="price">3,60 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img"><img src="COKE4.png" alt="Спрайт S 0,4 л" loading="lazy"></div>
+                    <h3 class="card-name">Спрайт S (0,4 л)</h3>
+                    <div class="card-bottom">
+                        <span class="price">3,60 р.</span>
+                        <button class="btn" type="button">В корзину</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <img src="logo.png" alt="Логотип KFC">
+            <p>KFC • Доставка сочного настроения каждый день</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
