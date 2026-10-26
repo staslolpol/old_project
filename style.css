@@ -1,0 +1,273 @@
+/* ============ KFC Menu — стили ============ */
+
+:root {
+    --kfc-red: #e4002b;
+    --kfc-red-dark: #b30022;
+    --bg: #f7f5f2;
+    --card-bg: #ffffff;
+    --text: #2b2b2b;
+    --muted: #8a8a8a;
+    --radius: 18px;
+    --shadow: 0 6px 18px rgba(0, 0, 0, .08);
+    --shadow-hover: 0 14px 30px rgba(228, 0, 43, .18);
+    --sidebar-w: 190px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+}
+
+img { display: block; max-width: 100%; }
+
+/* ---------- Логотип в углу ---------- */
+.corner-logo {
+    position: fixed;
+    top: 14px;
+    left: 14px;
+    z-index: 100;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.corner-logo img { width: 52px; height: 52px; object-fit: contain; }
+.corner-logo:hover { transform: scale(1.08) rotate(-4deg); box-shadow: var(--shadow-hover); }
+
+/* ---------- Боковая панель ---------- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-w);
+    height: 100vh;
+    background: linear-gradient(180deg, var(--kfc-red) 0%, var(--kfc-red-dark) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    padding: 90px 16px 24px;
+    z-index: 90;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, .15);
+}
+
+.side-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background .2s ease, transform .2s ease;
+}
+.side-link img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    background: rgba(255, 255, 255, .92);
+    border-radius: 50%;
+    padding: 6px;
+    transition: transform .2s ease;
+}
+.side-link:hover { background: rgba(255, 255, 255, .16); transform: translateX(4px); }
+.side-link:hover img { transform: scale(1.1) rotate(6deg); }
+
+/* ---------- Контент ---------- */
+.content {
+    margin-left: var(--sidebar-w);
+    padding: 32px clamp(20px, 4vw, 56px) 60px;
+    max-width: 1400px;
+}
+
+/* ---------- Шапка ---------- */
+.hero {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-bottom: 44px;
+}
+.hero-inner {
+    padding: 34px 30px 22px;
+    text-align: center;
+}
+.hero-logo {
+    width: min(320px, 70%);
+    margin: 0 auto 10px;
+    object-fit: contain;
+}
+.hero h1 {
+    font-size: clamp(26px, 3.4vw, 40px);
+    font-weight: 800;
+    color: var(--kfc-red);
+    letter-spacing: .5px;
+}
+.hero-sub {
+    color: var(--muted);
+    font-size: 16px;
+    margin-top: 6px;
+}
+.hero-photo {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ---------- Секции меню ---------- */
+.menu-section { margin-bottom: 52px; scroll-margin-top: 24px; }
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--kfc-red);
+}
+.section-title .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--kfc-red);
+    box-shadow: 0 0 0 4px rgba(228, 0, 43, .18);
+}
+
+.grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+/* ---------- Карточка блюда ---------- */
+.card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.card-img {
+    aspect-ratio: 1 / .78;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 45%, #fdf3ee 0%, #faf6f2 70%);
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+.card-img img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    transition: transform .3s ease;
+}
+.card:hover .card-img img { transform: scale(1.07) rotate(-2deg); }
+
+.card-name {
+    font-size: 16px;
+    font-weight: 700;
+    min-height: 2.6em;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+}
+
+.card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.price {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--kfc-red);
+    white-space: nowrap;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 13px;
+    color: #fff;
+    background: var(--kfc-red);
+    padding: 10px 16px;
+    border-radius: 999px;
+    transition: background .2s ease, transform .15s ease, box-shadow .2s ease;
+}
+.btn:hover {
+    background: var(--kfc-red-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(228, 0, 43, .35);
+}
+.btn:active { transform: translateY(0) scale(.96); }
+
+/* ---------- Футер ---------- */
+.footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    color: var(--muted);
+    font-weight: 600;
+}
+.footer img { width: 56px; height: 56px; object-fit: contain; }
+
+/* ---------- Адаптивность ---------- */
+@media (max-width: 900px) {
+    :root { --sidebar-w: 84px; }
+    .side-link span { display: none; }
+    .side-link { justify-content: center; padding: 10px; }
+    .hero-photo { height: 160px; }
+}
+
+@media (max-width: 560px) {
+    .content { padding: 20px 14px 40px; }
+    .grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+    .card { padding: 12px; }
+    .card-name { font-size: 13px; min-height: 3em; }
+    .price { font-size: 15px; }
+    .btn { padding: 8px 10px; font-size: 11px; }
+}
+
+@media (max-width: 400px) {
+    .grid { grid-template-columns: 1fr; }
+}
